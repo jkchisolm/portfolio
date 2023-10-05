@@ -42,7 +42,7 @@ export const FeaturedCard = (props: Props) => {
             ))}
           </div>
         )}
-        <div className="flex flex-row justify-start items-center justify-self-end mt-2">
+        <div className="flex flex-row justify-start items-end h-full my-2">
           <a href={props.links[0]} className="px-2">
             <FaLink size={32} />
           </a>
