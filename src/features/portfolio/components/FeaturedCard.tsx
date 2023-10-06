@@ -5,7 +5,7 @@ type Props = {
   description: string;
   imagePath: string;
   backgroundColor?: string;
-  skills?: string[];
+  skills: string[];
   links: string[];
   colorScheme: "light" | "dark";
 };

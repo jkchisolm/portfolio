@@ -1,4 +1,4 @@
-import { FeaturedCard } from "../components";
+import { FeaturedCard, Timeline } from "../components";
 import MeImg from "../../../assets/me3.png";
 import RecreatifyImg from "../../../assets/Recreatify.png";
 
@@ -6,11 +6,17 @@ export const LandingPage = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center w-full md:w-3/4 lg:w-1/2 px-3 mt-4">
-        <div className="flex flex-col md:flex-row justify-start items-center w-full py-4">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full py-4">
           <h1 className="text-5xl font-bold">Hello World!</h1>
-          <a href="/about" className="md:ml-7 text-xl text-green-500 font-bold">
-            More about me ⏵
-          </a>
+          <div>
+            {" "}
+            <a
+              href="/about"
+              className="md:ml-7 text-xl text-green-500 font-bold"
+            >
+              More about me ⏵
+            </a>
+          </div>
         </div>
         <div className="text-2xl">
           Hi! I'm Josh, a software engineer and full-stack web developer. I also
@@ -64,6 +70,10 @@ export const LandingPage = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center w-full mt-8 px-3 md:px-14">
+        <h2 className="text-3xl font-bold self-start">Project Timeline</h2>
+        <Timeline />
       </div>
     </div>
   );
