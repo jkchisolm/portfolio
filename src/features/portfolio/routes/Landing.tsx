@@ -30,6 +30,36 @@ export const LandingPage = () => {
           </span>{" "}
           I am a passionate developer who loves to constantly learn, grow, and
           build new projects.
+          <br /> <br />
+          Check out my{" "}
+          <a
+            href="https://github.com/jkchisolm"
+            className="text-purple-500 font-bold"
+          >
+            GitHub
+          </a>
+          , or contact me via{" "}
+          <a
+            href="https://www.linkedin.com/in/joshua-chisolm-6727b4221/"
+            className="text-blue-500 font-bold"
+          >
+            LinkedIn
+          </a>{" "}
+          ,{" "}
+          <a
+            href="https://twitter.com/frozenal_"
+            className="text-black font-bold"
+          >
+            Twitter
+          </a>
+          , or{" "}
+          <a
+            href="mailto:jkchisolm22@gmail.com"
+            className="text-red-500 font-bold"
+          >
+            Email
+          </a>
+          !
         </div>
       </div>
       <div className="flex flex-col justify-center items-center w-full mt-8 px-3 md:px-14">

@@ -20,13 +20,13 @@ export const Timeline = () => {
         <TimelineCard
           side="right"
           title="Spotify.Me Clone (April-May 2023)"
-          description="A full-stack clone of Twitter/X. Currently work in progress"
+          description="A recreation of a now-defunct Spotify statistics tracker. You can log in with your Spotify account and gain insights into your recent and all-time listening habits."
           skills={["Front-end", "UI/UX", "React", "Next.js"]}
         />
         <TimelineCard
           side="left"
           title="Portfolio (December 2022, October 2023)"
-          description="A full-stack clone of Twitter/X. Currently work in progress"
+          description="The website you're currently looking at right now! This website was originally built in December of 2022, before being redesigned and remade in October of 2023."
           skills={["Front-end", "UI/UX", "React"]}
         />
       </div>
