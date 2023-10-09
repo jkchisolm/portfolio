@@ -24,3 +24,5 @@ jobs:
             cd ~/portfolio
             pwd
             git pull
+            npm i
+            npm run build
