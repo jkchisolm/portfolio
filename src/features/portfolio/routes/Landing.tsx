@@ -26,9 +26,9 @@ export const LandingPage = () => {
           <span className="font-bold text-green-400">Computer Science</span> at
           the{" "}
           <span className="font-bold text-cyan-500">
-            University of Southern California.
-          </span>{" "}
-          I am a passionate developer who loves to constantly learn, grow, and
+            University of Southern California
+          </span>
+          . I am a passionate developer who loves to constantly learn, grow, and
           build new projects.
           <br /> <br />
           Check out my{" "}
@@ -44,7 +44,7 @@ export const LandingPage = () => {
             className="text-blue-500 font-bold"
           >
             LinkedIn
-          </a>{" "}
+          </a>
           ,{" "}
           <a
             href="https://twitter.com/frozenal_"
