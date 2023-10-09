@@ -4,7 +4,7 @@ export const Timeline = () => {
   return (
     <div className="mx-auto w-full h-full">
       <div className="relative wrap overflow-hidden md:p-10 h-full">
-        <div className="border-2-2 absolute border-opacity-20 border-black h-full border md:left-1/2"></div>
+        <div className="border-2-2 absolute border-opacity-20 border-black dark:border-white h-full border md:left-1/2"></div>
         <TimelineCard
           side="right"
           title="Fleeter (August 2023-Present)"

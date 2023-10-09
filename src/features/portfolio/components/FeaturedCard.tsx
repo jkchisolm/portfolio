@@ -4,51 +4,44 @@ type Props = {
   title: string;
   description: string;
   imagePath: string;
-  backgroundColor?: string;
   skills: string[];
   links: string[];
-  colorScheme: "light" | "dark";
 };
 
 export const FeaturedCard = (props: Props) => {
   return (
-    <div className="grid grid-cols-1 grid-rows-5 gap-0 w-full h-full justify-center items-center rounded-lg">
-      <div className="row-span-2 bg-blue-500 h-full rounded-t-lg">
-        <div className="w-full h-full overflow-hidden">
-          <img
-            src={props.imagePath}
-            alt={props.title}
-            className="rounded-t-lg"
-          />
-        </div>
+    <div className="max-w-sm rounded-lg border border-gray-200 shadow dark:bg-zinc-900 dark:border-gray-800 m-5">
+      <div className="h-1/2 overflow-hidden">
+        <img
+          className="rounded-t-lg object-cover h-full w-full"
+          src={props.imagePath}
+        />
       </div>
-      <div
-        className={`row-span-3 ${props.backgroundColor} rounded-b h-full flex 
-        flex-col justify-start items-start px-2 pb-2 pt-5 ${
-          props.colorScheme == "light" ? "text-white" : "text-black"
-        }`}
-      >
-        <div className="text-2xl font-bold">{props.title}</div>
-        <div>{props.description}</div>
-        {props.skills && (
-          <div className="flex flex-row justify-start items-center mt-2">
-            {props.skills.map((skill) => (
-              <div
-                className="bg-gray-100 text-gray-700 rounded-lg px-2 py-1 mr-2"
-                key={skill}
-              >
-                {skill}
-              </div>
-            ))}
-          </div>
-        )}
-        <div className="flex flex-row justify-start items-end h-full my-2">
-          <a href={props.links[0]} className="px-2">
-            <FaLink size={32} />
-          </a>
-          <a href={props.links[1]} className="px-2">
-            <FaGithub size={32} />
-          </a>
+      <div className="p-5">
+        <h3 className="font-bold text-black dark:text-white text-3xl">
+          {props.title}
+        </h3>
+        <p className="my-3 text-black dark:text-white">{props.description}</p>
+        <div className="flex flex-row justify-center items-center flex-wrap mt-2">
+          {props.skills.map((skill) => (
+            <div
+              className="bg-gray-100 text-gray-700 rounded-lg px-2 py-1 mr-2 mt-1"
+              key={skill}
+            >
+              {skill}
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-row justify-center items-center mt-4 pb-2">
+          {props.links.map((link) => (
+            <a
+              href={link}
+              className="bg-gray-100 text-gray-700 rounded-lg text-lg px-2 py-2 mr-2"
+              key={link}
+            >
+              {link.includes("github") ? <FaGithub /> : <FaLink />}
+            </a>
+          ))}
         </div>
       </div>
     </div>

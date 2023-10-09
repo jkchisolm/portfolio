@@ -13,9 +13,11 @@ export const TimelineCard = ({ side, title, description, skills }: Props) => {
       } justify-between items-center w-full right-timeline`}
     >
       <div className="order-1 md:w-5/12"></div>
-      <div className="order-1 border-black border-2 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
-        <h3 className="mb-3 font-bold text-gray-800 text-xl">{title}</h3>
-        <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+      <div className="order-1 border-black dark:border-white border-2 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+        <h3 className="mb-3 font-bold text-gray-800 dark:text-white text-xl">
+          {title}
+        </h3>
+        <p className="text-sm leading-snug tracking-wide text-gray-900 dark:text-white text-opacity-100">
           {description}
         </p>
         <div className="flex flex-row justify-start items-center flex-wrap mt-2">
