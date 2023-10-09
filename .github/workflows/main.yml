@@ -21,9 +21,9 @@ jobs:
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
+            nvm use 20.5.1
             cd ~/portfolio
             pwd
             git pull
-            node -v
-            npm -v
+            npm i
             npm run build
