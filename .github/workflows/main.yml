@@ -3,17 +3,16 @@ name: Node CI/CD
 on:
   push:
     branches: [main]
-    
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
-        node-version: [20.x]
-    
+        node-version: [22.x]
+
     steps:
-      - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: appleboy/ssh-action@master
         with:
@@ -23,7 +22,6 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             cd ~/portfolio
-            pwd
-            git pull
+            git pull origin main
             npm i
             npm run build
