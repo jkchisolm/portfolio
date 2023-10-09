@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: [20.x]
 
     steps:
       - name: Use Node.js ${{ matrix.node-version }}
@@ -22,6 +22,4 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             cd ~/portfolio
-            git pull origin main
-            npm i
-            npm run build
+            pwd
