@@ -17,7 +17,7 @@ export const MainLayout = ({ children }: Props) => {
           <a className={`px-3`} href="/about">
             About
           </a>
-          <a className={`px-3`} href="/src/assets/Joshua Chisolm Resume.pdf">
+          <a className={`px-3`} href="/src/assets/jkcResume.pdf">
             Resume
           </a>
         </div>
