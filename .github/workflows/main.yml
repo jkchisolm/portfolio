@@ -22,8 +22,8 @@ jobs:
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            cd /root/portfolio
-            git checkout .
+            cd ~/portfolio
+            pwd
             git pull
             npm i
             npm run build
