@@ -77,7 +77,9 @@ export const LandingPage = () => {
           />
           <FeaturedCard
             title="Recreatify"
-            description="A recreation of Spotify.Me, a website that analyzes your Spotify listening habits and provides you with interesting statistics about your listening history."
+            description="A functioning recreation of the Spotify Web Player. 
+                          You can log in with your Spotify Premium account and 
+                          listen to your favorite tracks and playlists."
             imagePath={RecreatifyImg}
             skills={["Front-end", "UI/UX", "React", "Redux"]}
             links={[

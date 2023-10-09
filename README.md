@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my portfolio, a display of my personal projects, skills, and growth as a developer.
 
-Currently, two official plugins are available:
+### [🌐 Website](https://recreatify.jkchisolm.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+On this page you will find a list of featured projects, which are the projects I am the most proud of. These are my most polished projects. You will also find a timeline of all of my projects and links to each. On the "Work" section you can find a detailed breakdown of each project. In the "About" page you'll find a detailed breakdown of me, my skills, and my interests. You can also view my resume by clicking the "Resume" tab in the navigation bar.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- `React + React Router`
+- `TailwindCSS`
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Author
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Joshua Chisolm
+
+- Website: [jkchisolm.com](https://jkchisolm.com)
+- LinkedIn: [linkedin.com/in/jkchisolm](https://linkedin.com/in/jkchisolm)
+- Twitter: [@frozenal\_](https://twitter.com/frozenal_)
