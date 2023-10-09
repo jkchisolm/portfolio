@@ -65,7 +65,7 @@ export const LandingPage = () => {
       <div className="flex flex-col justify-center items-center w-full mt-8 px-3 md:px-14">
         <h2 className="text-3xl font-bold self-start">Featured</h2>
         <div
-          className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 
+          className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 
           md:grid-rows-1 gap-5 justify-center items-center w-full xs:min-h-[60rem] md:h-96 mt-4"
         >
           <div className="row-span-1 h-full rounded">
